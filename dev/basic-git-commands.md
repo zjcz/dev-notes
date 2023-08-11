@@ -189,3 +189,26 @@ To view the commits that changed the number of occurances of a string (useful to
 git log -S <string>
 ```
 
+## Examples
+
+Add a new local project to Git and push to GitHub:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git remote add origin https://github.com/username/repository-name.git
+git push -u origin main
+```
+
+Clone a remote repository from GitHub:
+
+```bash
+git clone https://github.com/username/repository-name.git
+cd repository-name
+```
+
+## References
+- (Git - Book)[https://git-scm.com/book/en/v2]
+- (Git Tutorial:W3 Scools)[https://www.w3schools.com/git/]
+- (Master Git in 7 Minutes)[https://dev.to/valeriavg/master-git-in-7-minutes-gai]
