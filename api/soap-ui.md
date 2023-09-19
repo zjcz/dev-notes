@@ -39,5 +39,20 @@ testRunner.testCase.getTestStepByName('<test-step-name>').getPropertyValue('<pro
 
 Can use setPropertyValue(Name, Value) to add/update the value of a property. Use addProperty(Name) to add a new property.
 
+## Groovy Scripts
+Add jars to soapui-X.X.X/bin/ext folder and "import" them in the script
+
+To list all methods on an object:
+
+```Groovy
+log.info object.metaClass.methods*.name.unique().sort()
+```
+
+## Tests
+
+Setup and Teardown scripts run before and after the tests
+
+Use the Property Transfer test step to transfer properties from the response of one API call to the request of another API call.
+
 ## References
 [Soap-ui - Property and scripting samples](https://www.soapui.org/scripting-properties/property-and-scripting-samples/)
